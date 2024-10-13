@@ -1,4 +1,3 @@
-%code by deku878
 clc;
 clear all;
 q = 71/3600;
