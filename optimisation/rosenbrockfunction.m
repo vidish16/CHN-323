@@ -1,7 +1,10 @@
 initial_guess=[0.5,0];
-A=[1,2;2,1];
-B=[1;1];
-[x,F]=fmincon(@(x) rosenbrock(x),initial_guess,A,B);
+A=[1,2];
+B=[1];
+
+Aeq=[2,1];
+Beq=[1];
+[x,F]=fmincon(@(x) rosenbrock(x),initial_guess,A,B,Aeq,Beq);
 disp('The values of x1 and x2 at minimum values are');
 x
 disp('The minimum value is');
